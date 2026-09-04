@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       setTimeout(() => {
         window.location.href = "calendar.html";
-      }, 1800);
+      }, 4000); // Redirect after 4 seconds
     }, 400);
   });
 
