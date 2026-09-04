@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 Choose Our Date</title>
+    <meta name="description" content="Choose a date for our date">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hearts-bg" aria-hidden="true">
+        <span class="floating-heart" style="--i:0">💕</span>
+        <span class="floating-heart" style="--i:1">💗</span>
+        <span class="floating-heart" style="--i:2">💖</span>
+        <span class="floating-heart" style="--i:3">💝</span>
+        <span class="floating-heart" style="--i:4">❤️</span>
+        <span class="floating-heart" style="--i:5">💕</span>
+        <span class="floating-heart" style="--i:6">💗</span>
+        <span class="floating-heart" style="--i:7">💖</span>
+    </div>
+
+    <main class="container">
+        <section class="calendar-card" aria-labelledby="calendarTitle">
+            <a class="back-link" href="index.html">← Back</a>
+            <p class="eyebrow">Our next moment together</p>
+            <h1 id="calendarTitle">Choose the date 💖</h1>
+            <p class="calendar-intro">Choose a time that makes you happy. I will receive your selection and send a calendar invitation to your email.</p>
+
+            <form id="calendarForm" novalidate>
+                <div class="form-grid">
+                    <label for="date">Date
+                        <input id="date" name="date" type="date" required>
+                    </label>
+                    <label for="time">Start time
+                        <input id="time" name="time" type="time" required>
+                    </label>
+                    <label for="email">Your email address
+                        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                    </label>
+                </div>
+
+                <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+                <button id="confirmBtn" class="primary-action" type="submit">
+                    <span>Confirm our date</span>
+                    <span aria-hidden="true">💌</span>
+                </button>
+            </form>
+        </section>
+    </main>
+    <script src="calendar.js"></script>
+</body>
+</html>
